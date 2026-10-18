@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Troque aqui as cores da sua marca -->
+    <color name="accent">#E0352B</color>
+    <color name="accent_dark">#8E1E17</color>
+    <color name="bg_dark">#0E0418</color>
+    <color name="bg_mid">#22093A</color>
+    <color name="bg_light">#3B1460</color>
+    <color name="sidebar">#2A0C45</color>
+    <color name="card">#2A2A28</color>
+    <color name="text">#FFFFFF</color>
+    <color name="text_dim">#A9A0B5</color>
+    <color name="focus_overlay">#33FFFFFF</color>
+</resources>

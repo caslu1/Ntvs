@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#111116">
+    <ImageView android:id="@+id/backdrop" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:alpha="0.35" android:scaleType="centerCrop" />
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/backdrop_fade" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+            <ImageView android:id="@+id/poster" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="14dp"
+                android:background="@drawable/sel_button" android:focusable="true" android:clickable="true" android:padding="10dp" android:src="@drawable/ic_back" />
+        </FrameLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+                android:paddingStart="28dp" android:paddingTop="24dp" android:paddingEnd="28dp" android:paddingBottom="24dp">
+                <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:id="@+id/meta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                    android:textColor="@color/text_dim" android:textSize="14sp" />
+                <TextView android:id="@+id/plot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                    android:ellipsize="end" android:maxLines="4" android:textSize="15sp" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/btnPlay" style="@style/DetailBtn" android:drawableStart="@drawable/ic_play" android:text="Reproduzir" />
+                    <TextView android:id="@+id/btnFav" style="@style/DetailBtn" android:drawableStart="@drawable/ic_add" android:text="Favoritos" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSeasons" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp" android:visibility="gone" />
+                <LinearLayout android:id="@+id/episodes" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:orientation="vertical" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress" android:layout_width="48dp" android:layout_height="48dp" android:layout_gravity="center" />
+</FrameLayout>

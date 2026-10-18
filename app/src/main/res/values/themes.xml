@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/bg_mid</item>
+        <item name="colorPrimaryDark">@color/bg_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorHint">@color/text_dim</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+    <style name="AppTheme.Player">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="SideIcon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxHeight">90dp</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/sel_side</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="SettingRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/sel_item</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="LoginInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHint">@color/text_dim</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="Tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/sel_tab</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="DetailBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">22dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:background">@drawable/sel_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>
